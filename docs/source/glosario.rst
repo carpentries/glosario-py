@@ -1,13 +1,13 @@
-glossary package
+glosario package
 ================
 
 Submodules
 ----------
 
-glossary.glossary module
+glosario.glosario module
 ------------------------
 
-.. automodule:: glossary.glossary
+.. automodule:: glosario.glosario
    :members:
    :undoc-members:
    :show-inheritance:
@@ -16,7 +16,7 @@ glossary.glossary module
 Module contents
 ---------------
 
-.. automodule:: glossary
+.. automodule:: glosario
    :members:
    :undoc-members:
    :show-inheritance:

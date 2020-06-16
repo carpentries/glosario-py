@@ -10,6 +10,22 @@ Terms = {term['slug']: term for term in raw}
 __language__ = 'en'
 
 def get_languages_available():
+    """
+    Concatenates two pandas categoricals.
+
+    Parameters
+    ----------
+
+    Returns
+    -------
+    Counter({})
+      A counter object with the number of instances each language is present as an entry.
+
+    Examples
+    --------
+    >>> from glosario import glosario
+    >>> glosario.get_languages_available()
+    """
     lang_dict = Counter()
 
     for _, values in Terms.items():

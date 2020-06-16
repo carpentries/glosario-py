@@ -1,7 +1,7 @@
-glossary
+glosario
 ========
 
 .. toctree::
    :maxdepth: 4
 
-   glossary
+   glosario
