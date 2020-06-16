@@ -11,3 +11,4 @@ Contributors
 ------------
 
 * Greg Wilson (greg@rstudio.com)
+* François Michonneau
