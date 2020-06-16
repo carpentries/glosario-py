@@ -8,13 +8,13 @@ Installation
 Stable release
 --------------
 
-To install glossary, run this command in your terminal:
+To install glosario, run this command in your terminal:
 
 .. code-block:: console
 
-    $ pip install -i https://test.pypi.org/simple/ glossary
+    $ pip install glosario
 
-This is the preferred method to install glossary, as it will always install the most recent stable release.
+This is the preferred method to install glosario.
 
 If you don't have `pip`_ installed, this `Python installation guide`_ can guide
 you through the process.
@@ -32,13 +32,13 @@ You can either clone the public repository:
 
 .. code-block:: console
 
-    $ git clone git://github.com/ian-flores/glossary
+    $ git clone git://github.com/carpentries/glosario-py
 
 Or download the `tarball`_:
 
 .. code-block:: console
 
-    $ curl  -OL https://github.com/ian-flores/glossary/tarball/master
+    $ curl  -OL https://github.com/carpentries/glosario/tarball/master
 
 Once you have a copy of the source, you can install it with:
 
@@ -47,5 +47,5 @@ Once you have a copy of the source, you can install it with:
     $ python setup.py install
 
 
-.. _Github repo: https://github.com/ian-flores/glossary
-.. _tarball: https://github.com/ian-flores/glossary/tarball/master
+.. _Github repo: https://github.com/carpentries/glosario
+.. _tarball: https://github.com/carpentries/glosario/tarball/master
