@@ -101,7 +101,7 @@ def define(slug):
     Examples
     --------
     >>> from glosario import glosario
-    >>> glosario.get_languages_available()
+    >>> glosario.define('data frame')
     """
     try:
         similar_word = __search_similar_word__(slug)

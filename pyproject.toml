@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "glosario"
-version = "0.2.1"
+version = "0.1"
 description = "Python package to define technical terms"
 authors = ["Ian Flores Siaca <iflores.siaca@gmail.com>", "Greg Wilson <greg@rstudio.com>", "François Michonneau"]
 license = "MIT"
