@@ -1,6 +1,6 @@
 ## glosario
 
-[![Documentation Status](https://readthedocs.org/projects/glossary/badge/?version=latest)](https://glossary.readthedocs.io/en/latest/?badge=latest)
+[![Documentation Status](https://readthedocs.org/projects/glosario/badge/?version=latest)](https://glosario.readthedocs.io/en/latest/?badge=latest)
 
 Package to define technical terms
 
