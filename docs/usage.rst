@@ -2,6 +2,9 @@
 Usage
 =====
 
-To use glossary in a project::
+To use glosario in a project::
 
-    import glossary
+    from glosario import glosario
+    glosario.set_language('en')
+    glosario.define('data frame')
+

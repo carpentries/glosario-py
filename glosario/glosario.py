@@ -11,7 +11,7 @@ __language__ = 'en'
 
 def get_languages_available():
     """
-    Concatenates two pandas categoricals.
+    Get all languages available part of the dictionary.
 
     Parameters
     ----------
@@ -37,6 +37,23 @@ def get_languages_available():
     return lang_dict
 
 def set_language(language, verbose=False):
+    """
+    Get all languages available part of the dictionary.
+
+    Parameters
+    ----------
+    language: str
+        Language to return the definitions in
+    verbose: bool
+        Whether to print verbal confirnmation of the change
+    Returns
+    -------
+
+    Examples
+    --------
+    >>> from glosario import glosario
+    >>> glosario.set_language('es')
+    """
     langs_available = get_languages_available()
 
     if language not in langs_available.keys():
@@ -59,6 +76,7 @@ def __known_words__():
     return Terms.keys()
 
 def __search_similar_word__(slug):
+    '''Match up to most similar word'''
     similarity_dict = {}
 
     for term in __known_words__():
@@ -67,6 +85,24 @@ def __search_similar_word__(slug):
     return max(similarity_dict, key = similarity_dict.get)
 
 def define(slug):
+    """
+    Define a given word
+
+    Parameters
+    ----------
+    slug: str
+        The word you want to search
+
+    Returns
+    -------
+    str:
+      The word definition
+
+    Examples
+    --------
+    >>> from glosario import glosario
+    >>> glosario.get_languages_available()
+    """
     try:
         similar_word = __search_similar_word__(slug)
         word_definition = __search_word__(similar_word)

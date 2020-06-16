@@ -66,8 +66,8 @@ Ready to contribute? Here's how to set up `glossary` for local development.
 
 3. Install your local copy into a virtualenv. Assuming you have virtualenvwrapper installed, this is how you set up your fork for local development::
 
-    $ mkvirtualenv glossary
-    $ cd glossary/
+    $ mkvirtualenv glosario
+    $ cd glosario/
     $ python setup.py develop
 
 4. Create a branch for local development::
@@ -79,7 +79,7 @@ Ready to contribute? Here's how to set up `glossary` for local development.
 5. When you're done making changes, check that your changes pass flake8 and the
    tests, including testing other Python versions with tox::
 
-    $ flake8 glossary tests
+    $ flake8 glosario tests
     $ python setup.py test or py.test
     $ tox
 
@@ -103,7 +103,7 @@ Before you submit a pull request, check that it meets these guidelines:
    your new functionality into a function with a docstring, and add the
    feature to the list in README.rst.
 3. The pull request should work for Python 2.7, 3.4, 3.5 and 3.6, and for PyPy. Check
-   https://travis-ci.org/ian-flores/glossary/pull_requests
+   https://travis-ci.org/ian-flores/glosario/pull_requests
    and make sure that the tests pass for all supported Python versions.
 
 Tips
@@ -111,7 +111,7 @@ Tips
 
 To run a subset of tests::
 
-    $ py.test tests.test_glossary
+    $ py.test tests.test_glosario
 
 Deploying
 ---------
@@ -128,4 +128,4 @@ Travis will then deploy to PyPI if tests pass.
 
 Code of Conduct
 ---------------
-Please note that the glossary project is released with a Contributor Code of Conduct. By contributing to this project you agree to abide by its terms.
+Please note that the glosario project is released with a Contributor Code of Conduct. By contributing to this project you agree to abide by its terms.

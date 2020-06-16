@@ -14,7 +14,7 @@ To get started, check out the sections below:
    contributing
    conduct
    contributors
-   source/modules
+   source/glosario
 
 Indices and tables
 ==================
