@@ -5,10 +5,10 @@ Credits
 Development Lead
 ----------------
 
-* Ian Flores Siaca (iflores.siaca@gmail.com)
+* Ian Flores Siaca (iflores.siaca@pm.me)
 
 Contributors
 ------------
 
-* Greg Wilson (greg@rstudio.com)
-* François Michonneau
+* François Michonneau (francois@carpentries.org)
+* Greg Wilson (gvwilson@third-bit.com)
