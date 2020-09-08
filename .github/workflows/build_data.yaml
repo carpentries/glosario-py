@@ -22,7 +22,7 @@ jobs:
           pip install requests
           
       - name: Download Glosario
-        run: python utils/fetch-glossary.R
+        run: python utils/download_data.py
 
       - name: Push the new file to the repo
         run: |
