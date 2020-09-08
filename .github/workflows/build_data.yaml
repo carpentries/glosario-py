@@ -1,0 +1,33 @@
+on:
+  schedule:
+  - cron: "0 0 * * *"
+
+name: build_data
+
+jobs:
+  build_data:
+    runs-on: macOS-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+          
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+          
+      - name: Download Glosario
+        run: python utils/fetch-glossary.R
+
+      - name: Push the new file to the repo
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add glosario/data/glossary.yml
+          git commit -m "GH ACTION - Glosario file generated"
+          git push -q
