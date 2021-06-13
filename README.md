@@ -2,7 +2,7 @@
 
 [![Documentation Status](https://readthedocs.org/projects/glosario/badge/?version=latest)](https://glosario.readthedocs.io/en/latest/?badge=latest)
 
-Package to define technical terms
+This python package enables programatic access to the [glosario](https://github.com/carpentries/glosario) glossary of technical terms. These definitions are used in the context of Carpentries lessons, where newly introduced terms require clarification. 
 
 ### Installation:
 
