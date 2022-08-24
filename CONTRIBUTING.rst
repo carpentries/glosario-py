@@ -38,8 +38,8 @@ and "help wanted" is open to whoever wants to implement it.
 Write Documentation
 ~~~~~~~~~~~~~~~~~~~
 
-glossary could always use more documentation, whether as part of the
-official glossary docs, in docstrings, or even on the web in blog posts,
+`glosario` could always use more documentation, whether as part of the
+official `glosario` docs, in docstrings, or even on the web in blog posts,
 articles, and such.
 
 Submit Feedback
@@ -57,18 +57,23 @@ If you are proposing a feature:
 Get Started!
 ------------
 
-Ready to contribute? Here's how to set up `glossary` for local development.
+Ready to contribute? Here's how to set up `glosario` for local development.
 
-1. Fork the `glossary` repo on GitHub.
+1. Fork the `glosario` repo on GitHub.
 2. Clone your fork locally::
 
-    $ git clone git@github.com:your_name_here/glossary.git
+    $ git clone git@github.com:your_name_here/glosario.git
 
-3. Install your local copy into a virtualenv. Assuming you have virtualenvwrapper installed, this is how you set up your fork for local development::
+3. `glosario` uses `poetry` for package management and setup.
 
-    $ mkvirtualenv glosario
-    $ cd glosario/
-    $ python setup.py develop
+Ensure that  `poetry` is installed::
+
+    $ curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
+
+Once installed, and within the cloned repository dir, create a virtual environment and install dependences::
+
+    $ poetry shell
+    $ poetry install 
 
 4. Create a branch for local development::
 
@@ -77,13 +82,11 @@ Ready to contribute? Here's how to set up `glossary` for local development.
    Now you can make your changes locally.
 
 5. When you're done making changes, check that your changes pass flake8 and the
-   tests, including testing other Python versions with tox::
+   tests::
 
     $ flake8 glosario tests
     $ python setup.py test or py.test
     $ tox
-
-   To get flake8 and tox, just pip install them into your virtualenv.
 
 6. Commit your changes and push your branch to GitHub::
 
@@ -92,6 +95,14 @@ Ready to contribute? Here's how to set up `glossary` for local development.
     $ git push origin name-of-your-bugfix-or-feature
 
 7. Submit a pull request through the GitHub website.
+
+Building this documentation
+----------------------------
+The project's documentation can be found in the ``docs/`` dir and is built with `sphinx <https://www.sphinx-doc.org/en/master/index.html>`_. Once you have a local environment setup as described above, you can build the documentation by either running `make.bat` on windows or typing on Linux/Mac::
+
+    $ make 
+
+This compiles the reStructuredText into html. 
 
 Pull Request Guidelines
 -----------------------
@@ -106,12 +117,6 @@ Before you submit a pull request, check that it meets these guidelines:
    https://travis-ci.org/ian-flores/glosario/pull_requests
    and make sure that the tests pass for all supported Python versions.
 
-Tips
-----
-
-To run a subset of tests::
-
-    $ py.test tests.test_glosario
 
 Deploying
 ---------

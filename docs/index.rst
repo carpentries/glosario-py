@@ -1,7 +1,8 @@
 Welcome to glosario's documentation!
 ===========================================================
 
-Package to define technical terms
+This python package enables programatic access to the `glosario <https://github.com/carpentries/glosario>`_ glossary of technical terms. These definitions are used in the context of Carpentries lessons, where newly introduced terms require clarification. The glossary is stored in a `single large YAML file <https://github.com/carpentries/glosario/blob/master/glossary.yml>`_ that is updated by contributors and authors of lessons.
+
 
 To get started, check out the sections below:
 
@@ -11,6 +12,7 @@ To get started, check out the sections below:
 
    installation
    usage
+   yaml_synchronization
    contributing
    conduct
    contributors
